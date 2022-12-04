@@ -14,13 +14,13 @@ Pod::Spec.new do |s|
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
   s.authors      = { "Avo Sukiasyan" => "avetik.sukiasyan@metamap.com" }
   s.platforms    = { :ios => "12.0" }
-  s.source       = { :git => "https://github.com/github_account/react-native-metaMap-sdk.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/jesuscast/metamap-reactnative-plugin", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
 
   s.dependency "React"
-	s.dependency 'MetaMap-ID-SDK', "~> 3.12.0"
+	s.dependency 'MetaMap-ID-SDK', :git => 'https://github.com/jesuscast/metamap-ios-sdk'
   # s.dependency "..."
 end
 
